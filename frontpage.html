@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Homepage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  height: 100%;
+  width: 33.33%;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: Georgia, serif;
+}
+
+/* Style the header */
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #f2cecc;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B28DFF;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.paragraph {
+  padding: 20px;
+  text-align: left;
+  background: #ccc;
+}
+
+.image1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.imagee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #868d8f;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inquiry {background-color: #FF9CEE;} 
+.inquiry:hover {background-color: #FFBEBC;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="paragraph">
+<h1 style="text-align:center"> <i> Adina's Methaphor </i> </h1>
+</div></div>
+
+<div class="topnav">
+  <a class="active" href="frontpage.html">Home</a>
+  <a href="aboutMe.html">About Me</a>
+  <a href="studentLife.html">Student Life</a>
+  <a href="sbux.html">Job Experiences</a>
+  <a href="form.html">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder=" Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+</div>
+</div>
+
+
+<div class="row">
+<div class="card">
+<img src="C:\Users\User\Documents\SEMESTER 4\CSC264\individual assignment\getToKnowMe.jpg.jpg" alt="Get To Know Me" class="image1" width="1200" height="500">
+</div>
+</div>
+</a>
+
+ <div class="column">
+ <div class="container">
+  <a href="aboutMe.html">
+  <image src= "C:\Users\User\Documents\SEMESTER 4\CSC264\individual assignment\adina1.jpg" alt="me" class="imagee" style=width: "100%" >
+  <div class="overlay">
+    <div class="text">About Me</div>
+</div>
+</div>
+</div>
+ </a>
+
+ <div class="column">
+ <div class="container">
+  <a href="studentLife.html">
+  <image src= "C:\Users\User\Documents\SEMESTER 4\CSC264\individual assignment\study.jpg" alt="study" class="imagee" style= width:"100%" >
+  <div class="overlay">
+    <div class="text">Student Life</div>
+</div>
+</div>
+</div>
+ </a>
+
+<div class="row">
+<div class="column">
+ <div class="container">
+  <a href="sbux.html">
+  <image src="C:\Users\User\Documents\SEMESTER 4\CSC264\individual assignment\sbux.jpg" alt="sbuxx" class="imagee" style= width:"100%" >
+  <div class="overlay">
+    <div class="text">Job Experiences</div>
+</div>
+</div>
+</div>
+</div>
+ </a>
+
+<div class="row">
+<div class="card">
+<div class="footer">
+<h2><a href="form.html" button class="btn inquiry">Any Inquiries</a></h2>
+<a href="mailto:%20adinazahrul@gmail.com" class="fa fa-google"></a>
+<a href="https://instagram.com/n.adinaaa?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+<a href="https://twitter.com/addyyadiyy?s=21&t=ZhWvIAjLDPgux7jR8hm2Ig" class="fa fa-twitter"></a>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+

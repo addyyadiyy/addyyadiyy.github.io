@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Contact </title>
+
+<body background="C:\Users\User\Documents\SEMESTER 4\CSC264\individual assignment\AestheticVSCODesktopWallpaper22.jpeg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function CONTACT() {
+                var firstName =
+                    document.forms.ConForm.fname.value;
+                var lastName =
+                    document.forms.ConForm.lname.value;
+                var email =
+                    document.forms.ConForm.email.value;
+                var message =
+                    document.forms.ConForm.message.value;
+                var conEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+                var conFName = /\d+$/g; 
+                var conLName = /\d+$/g; 
+                if (firstName == "" || conFName.test(fname)) {
+                    window.alert("Please enter your first name properly.");
+                    firstName.focus();
+                    return false;
+                }
+
+                if (lastName == "" || conLName.test(lname)) {
+                    window.alert("Please enter your last name properly.");
+                    lastName.focus();
+                    return false;
+                }
+ 
+                 if (email == "" || !conEmail.test(email)) {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+                                    
+                 if (message == "" || conMessage.test(lname)) {
+                    window.alert("Please enter your message.");
+                    message.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+<style>
+body {
+ margin: 0;
+ font-family: Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #f2cecc;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B28DFF;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=textt] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+.paragraph {
+  padding: 20px;
+  text-align: left;
+  background: #ccc;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ input[type=checkbox] {
+            vertical-align: middle;
+            position: relative;
+            bottom: 1px;
+        }
+          
+        label {
+            display: block;
+        }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inquiry {background-color: #FF9CEE;} 
+.inquiry:hover {background-color: #FFBEBC;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+
+</style>
+</head>
+<body>
+
+
+<div class="row">
+<div class="topnav">
+  <a href="frontpage.html">Home</a>
+  <a href="aboutMe.html">About Me</a>
+  <a href="studentLife.html">Student Life</a>
+  <a href="sbux.html">Job Experiences</a>
+  <a class="active" href="form.html">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="textt" placeholder=" Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+</div>
+</div>
+
+<h1 style="text-align:center"> <i> Contact </i> </h1>
+<p><center>
+<div class="row">
+    <img src="C:\Users\User\Documents\SEMESTER 4\CSC264\individual assignment\Pink and Purple UI Digitalism Online Sale Black Friday Instagram Post.jpg" alt="contact me" style="width:70%">
+  </div>
+</center></p>
+
+<center>
+<div class="content">
+<h1 style="text-align:center"><i> How To Reach Me </i></h1>
+</div>
+<div class="row">
+
+<div class="content">
+<div class="paragraph">
+  <div style="text-align:center">
+        <form name="ConForm" onsubmit="return CONTACT()" method="post">
+	<h2><u><i> Personal Details </i></u></h2>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your name..">
+	<label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Your last name..">
+        <label for="email">Email</label>
+        <input type="text" id="text" name="email" placeholder="Your email..">
+	  <label for="myCountry">Country</label>
+          <select id="myCountry" name="country">
+          <option value="my">Malaysia</option>
+          <option value="indo">Indonesia</option>
+          <option value="sg">Singapore</option>
+          <option value="other">Others</option>
+          </select>
+	<label for="checkbox">How do you find this website?</label><br>
+	  	 <input type="checkbox" name="option1">From my Friends<br>
+ 		 <input type="checkbox" name="option2">From online platform<br>
+ 		 <input type="checkbox" name="option3">From your resume<br>
+	  	 <input type="checkbox" name="option4">Others<br><br>
+	<label for="rate">Rate This Website</label>
+	<input type="radio" name="myRate" value= "Excellent">Excellent
+	<input type="radio" name="myRate" value= "Good">Good
+ 	<input type="radio" name="myRate" value= "Fair">Fair
+	<input type="radio" name="myRate" value= "Poor">Poor  <br><br>
+	  <label for="subject">Message Subject</label>
+          <select id="subject" name="subject">
+          <option value="request">Request</option>
+          <option value="proposal">Proposal</option>
+          <option value="suggestion">Suggestion</option>
+          <option value="others">Others</option>
+          </select>
+	<label for="message">Message</label>
+        <textarea id="message" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+	<input type="submit" value= "Send" name="Submit">
+        <input type="reset" value="Reset" name="Reset">
+      </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="footer">
+<h2><a href="form.html" button class="btn inquiry">Any Inquiries</a></h2>
+<a href="mailto:%20adinazahrul@gmail.com" class="fa fa-google"></a>
+<a href="https://instagram.com/n.adinaaa?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+<a href="https://twitter.com/addyyadiyy?s=21&t=ZhWvIAjLDPgux7jR8hm2Ig" class="fa fa-twitter"></a>
+</div>
+</div>
+
+</body>
+</html>
